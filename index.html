@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles.css" />
+      <title>Friends App</title>
+   </head>
+   <body>
+      <header class="header">
+         <h1 class="app-title">Friends App</h1>
+      </header>
+      <main class="main">
+         <aside class="filter-box">
+            <div class="name-filter">
+               <input
+                  class="search-input"
+                  type="text"
+                  placeholder="search by name"
+               />
+            </div>
+            <div class="gender-filter">
+               <input
+                  id="female"
+                  class="gender_btn"
+                  type="radio"
+                  name="gender"
+                  value="female"
+               />
+               <label class="gender-filter__label" for="female">female</label>
+               <input
+                  id="male"
+                  class="gender_btn"
+                  type="radio"
+                  name="gender"
+                  value="male"
+               />
+               <label class="gender-filter__label" for="male">male</label>
+               <input
+                  id="all"
+                  class="gender_btn"
+                  type="radio"
+                  name="gender"
+                  value="all"
+                  checked
+               />
+               <label class="gender-filter__label" for="all">all</label>
+            </div>
+            <h4 class="sort-type">sort by age:</h4>
+            <div class="age-sort">
+               <input
+                  class="radio-age"
+                  id="age-ascending"
+                  type="radio"
+                  name="sort"
+                  value="age-ascending"
+               />
+               <label class="btn" for="age-ascending"
+                  ><img
+                     class="menu-img"
+                     src="assets/sort-ascending.svg"
+                     alt="sort-ascending"
+               /></label>
+               <input
+                  class="radio-age"
+                  id="age-descending"
+                  type="radio"
+                  name="sort"
+                  value="age-descending"
+               />
+               <label class="btn" for="age-descending"
+                  ><img
+                     class="menu-img"
+                     src="assets/sort-descending.svg"
+                     alt="sort-descending"
+               /></label>
+            </div>
+            <div class="name-sort">
+               <h4 class="sort-type">sort by alphabet:</h4>
+               <input
+                  class="radio-name"
+                  id="name-ascending"
+                  type="radio"
+                  name="sort"
+                  value="name-ascending"
+               />
+               <label class="btn" for="name-ascending"
+                  ><img
+                     class="menu-img"
+                     src="assets/az.svg"
+                     alt="sort-ascending"
+               /></label>
+               <input
+                  class="radio-name"
+                  id="name-descending"
+                  type="radio"
+                  name="sort"
+                  value="name-descending"
+               />
+               <label class="btn" for="name-descending"
+                  ><img
+                     class="menu-img"
+                     src="assets/za.svg"
+                     alt="sort-descending"
+               /></label>
+            </div>
+            <button type="reset" class="reset-btn">Reset</button>
+         </aside>
+         <section class="friends-list"></section>
+      </main>
+      <script src="script.js"></script>
+   </body>
+</html>

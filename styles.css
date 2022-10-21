@@ -1,0 +1,125 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app-title{
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+  background-image: linear-gradient(#9198e5, #e66464);
+  background-size: 100%;
+  margin: 0 0 2rem 0;
+  padding: 1rem;
+  height: 100%;
+}
+
+.filter-box{
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.search-input{
+  height: 50%;
+  margin: 1rem 0;
+  outline: none;
+  padding: 0 0 0 15px;
+  font-size: 16px;
+  border: transparent;
+  border-bottom: 3px solid #e66464;
+  transition: all 0.1s ease;
+}
+
+.search-input::placeholder{
+  color: #c4c4c4;
+}
+
+.title{
+  margin: 0;
+  font-size: 26px;
+}
+
+.gender-filter{
+  margin: 1rem 0;
+}
+
+.sort-type{
+  margin: 1rem 0 .35rem 0;
+}
+
+.menu-img {
+  width: 24px;
+}
+
+.reset-btn{
+  cursor: pointer;
+  margin: 1rem 0;
+  padding: .25rem;
+  background: none;
+  border-radius: 10px;
+  border: 3px solid #9198e5;
+  color: #9198e5;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.friends-list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.friend-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: .4rem;
+  background: linear-gradient(#e66464, #9198e5);
+  border: 3px solid #9198e5;
+  border-radius: 30px;
+  height: 0 auto;
+  width: 180px;
+}
+
+.friends-info{
+  font-family: sans-serif;
+  padding: .3rem;
+  font-size: 16px;
+  margin: 0;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  text-align: center;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.name{
+  font-size: 20px;
+  margin-bottom: .4rem;
+  font-weight: 700;
+}
+
+.friend-avatar{
+  border-radius: 100px;
+  border: 4px solid white;
+  margin: .5rem;
+}
+
+@media only screen and (min-width: 1018px) {
+  .main{
+    display: flex;
+  }
+  .friend-card {
+  width: 200px;
+  }
+
+}
