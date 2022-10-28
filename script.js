@@ -2,22 +2,19 @@ const friendsList = document.querySelector(".friends-list");
 const friendCard = document.createElement("div");
 friendCard.classList.add(".friend-card");
 let usersData = [];
-const url = "https://randomuser.me/api/?results=100";
+const url = "https://randomuser.me/api/?results=30";
 
-function fetchUrl() {
-   fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-         usersData = data.results;
-         render(usersData);
-      })
-      .catch((error) => print(error));
+async function getData() {
+   const response = await fetch(url);
+   const data = await response.json();
+   usersData = data.results;
+   render(data.results);
 }
-fetchUrl();
+getData();
 
 function render(usersArray) {
    friendsList.innerHTML = "";
-   usersArray.map((user) => {
+   usersArray.slice.map((user) => {
       friendsList.innerHTML += `<div class='friend-card'>
     <img class='friend-avatar' src='${user.picture.large}'/>
     <p class='friends-info name'>${user.name.first} ${user.name.last}</p>

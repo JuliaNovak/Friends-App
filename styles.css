@@ -93,6 +93,15 @@ body {
   width: 170px;
 }
 
+.central-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    width: 100%;
+  height: 100%;
+}
+
 .friends-info{
   font-family: sans-serif;
   padding: .3rem;
@@ -125,6 +134,45 @@ body {
   width: 80px;
   height: 80px;
   animation: spin 2s linear infinite;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.pagination-list li a,
+.pagination-list li span {
+  display: block;
+  padding: 10px 15px;
+  border: 1px solid #9198e5;
+  text-decoration: none;
+  border-radius: 5px;
+  background: #9198e5;
+  color: #242B36;
+  user-select: none;
+}
+
+.pagination-list .previous a,
+.pagination-list .next a {
+  color: #fff;
+}
+
+.pagination-list .current span {
+  color: #9198e5;
+  border: 1px solid #9198e5;
+}
+
+.pagination-list .previous span,
+.pagination-list .next span {
+  background:#fff;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 @keyframes spin {
