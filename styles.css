@@ -136,43 +136,30 @@ body {
   animation: spin 2s linear infinite;
 }
 
-.pagination-list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style-type: none;
-  gap: 20px;
-  justify-content: center;
-  font-weight: bold;
-}
-
-.pagination-list li a,
-.pagination-list li span {
-  display: block;
-  padding: 10px 15px;
-  border: 1px solid #9198e5;
-  text-decoration: none;
-  border-radius: 5px;
+.go-back-btn, .go-further-btn{
+  width: 40px;
+  height: 40px;
+  margin:.3rem .3rem .3rem 0;
+  cursor: pointer;
   background: #9198e5;
-  color: #242B36;
-  user-select: none;
-}
-
-.pagination-list .previous a,
-.pagination-list .next a {
   color: #fff;
+  border-radius: 5px;
+  border:2px solid #9198e534
 }
 
-.pagination-list .current span {
-  color: #9198e5;
-  border: 1px solid #9198e5;
+.go-back-btn:hover, .go-further-btn:hover{
+  background: #515582;
 }
 
-.pagination-list .previous span,
-.pagination-list .next span {
-  background:#fff;
-  color: #fff;
-  border: 1px solid #fff;
+.go-back-btn:active, .go-further-btn:active{
+  background: #32344f;
+}
+
+.go-back-btn:disabled, .go-further-btn:disabled{
+  cursor: auto;
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
 
 @keyframes spin {
