@@ -1,3 +1,3 @@
 # Friends-App
 
-[Demo](https://julianovak.github.io/Friends-App/)
+[Demo](https://yuliianovak.github.io/Friends-App/)
