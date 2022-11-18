@@ -83,9 +83,11 @@ function filterUsers(usersCollection) {
             .includes(optionsForFilter.name);
          return userName;
       });
+   } else {
+      filteredUsers = usersCollection;
    }
    if (optionsForFilter.gender) {
-      filteredUsers = usersCollection.filter((user) => {
+      filteredUsers = filteredUsers.filter((user) => {
          const userGender = optionsForFilter.gender;
          if (user.gender === userGender || userGender === "all") {
             return user;
